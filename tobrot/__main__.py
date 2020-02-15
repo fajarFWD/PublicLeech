@@ -54,13 +54,13 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["get"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["mirror"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytg"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytmirror"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #

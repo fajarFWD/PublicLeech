@@ -38,7 +38,7 @@ async def help_message_f(client, message):
     message_id = 99
     # display the /help message
     await message.reply_text(
-        f"Selamat datang, harap baca pesan tersemat. <br/> Powered by @tleech",
+        f"Selamat datang, harap baca pesan tersemat. Powered by @tleech",
         quote=True
     )
 

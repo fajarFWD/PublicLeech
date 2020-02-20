@@ -54,13 +54,13 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["unduh"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["link"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["unduhyt"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["linkyt"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #

@@ -54,13 +54,13 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["muat"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["to"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["muatyt"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["toyt"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
